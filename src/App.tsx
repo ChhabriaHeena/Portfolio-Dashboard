@@ -1,7 +1,7 @@
 import GetProjectData from './components/GetProjectData'
 import AddProjectData from './components/AddProjectData'
 import UpdateProjectData from './components/UpdateProjectData'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import ViewProjectData from './components/ViewProjectData'
 
 function App() {
