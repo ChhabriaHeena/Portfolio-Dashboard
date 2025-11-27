@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Router basename={import.meta.env.PUBLIC_URL}>
+      <Router>
         <Routes>
           <Route path='/' element={<GetProjectData />} />
           <Route path='/add' element={<AddProjectData />} />
