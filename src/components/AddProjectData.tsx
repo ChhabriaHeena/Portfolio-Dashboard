@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import TechStack from './TechStack';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
@@ -19,7 +19,6 @@ const AddProjectData = ({ updateData }: any) => {
     github: "",
   });
 
-  const [imgData, setImgData] = useState<any>(null);
   const [submitImg, setSubmitImg] = useState<any>(null);
   const [imgFile, setImgFile] = useState<any>(null);
   const [preview, setPreview] = useState<any>(updateData ? updateData?.image : null);
@@ -73,7 +72,6 @@ const AddProjectData = ({ updateData }: any) => {
         .then((res: any) => res.json())
         .then((data: any) => {
 
-          setImgData(data)
           setAddData((prev: any) => ({
             ...prev,
             "image": data?.secure_url,

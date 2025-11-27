@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import IconButton from '@mui/material/IconButton';
 import AddIcon from '@mui/icons-material/Add';
@@ -39,7 +39,7 @@ const GetProjectData = () => {
                 }
             })
                 .then((res: any) => res.json())
-                .then((data: any) => postData())
+                .then((_: any) => postData())
         }
 
     }
