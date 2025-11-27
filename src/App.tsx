@@ -14,6 +14,7 @@ function App() {
           <Route path='/add' element={<AddProjectData />} />
           <Route path='update/:id' element={<UpdateProjectData />} />
           <Route path='view/:id' element={<ViewProjectData />} />
+
         </Routes>
       </Router>
     </>
